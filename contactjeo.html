@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="contactjeo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me</title>
+</head>
+<body>
+
+    <div class="navigation">
+        <div class="logo">
+            <a href="">Jeovanna</a>
+        </div>
+        <ul class="nav-links">
+            <li><a class="redlink" href="index.html">Home</a></li>
+            <li><a class="servicelink" href="servicejeo.html">Services</a></li>
+        </ul>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+
+    <div class="main">
+        <label for=""><a href="https://instagram.com/jeovannapt?igshid=YmMyMTA2M2Y=" target="_blank">@jeovannapt<i class="fa-brands fa-instagram"></i></a></label>
+    </div>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        const links = document.querySelectorAll('.nav-links li');
+
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("open");
+        });
+    </script>
+</body>
+</html>
